@@ -32,9 +32,18 @@ h4 {
 img  {
   display: block;
 }
+.square {
+  visibility: hidden;
+}
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .landscape {
+    display: none;
+  }
+  .square {
+    visibility: visible;
   }
 }
